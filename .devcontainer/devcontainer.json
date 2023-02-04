@@ -1,16 +1,16 @@
 {
 	"name": "ASPNET",
 	// Configure tool-specific properties.
-		"build": {
-			"dockerfile": "Dockerfile",
-			"args": {
-				// Update 'VARIANT' to pick a .NET Core version: 3.1, 6.0
-				// Append -bullseye or -focal to pin to an OS version.
-				"VARIANT": "6.0-bullseye",
-				// Options
-				"NODE_VERSION": "lts/*"
-			}
-		},
+	"build": {
+		"dockerfile": "Dockerfile",
+		"args": {
+			// Update 'VARIANT' to pick a .NET Core version: 3.1, 6.0
+			// Append -bullseye or -focal to pin to an OS version.
+			"VARIANT": "7.0-bullseye",
+			// Options
+			"NODE_VERSION": "lts/*"
+		}
+	},
 	"customizations": {
 		// Configure properties specific to VS Code.
 		"vscode": {
