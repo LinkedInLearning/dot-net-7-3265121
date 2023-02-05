@@ -1,11 +1,13 @@
-﻿void FibonacciAB(int nombre, int a, int b)
+﻿using System.Numerics;
+
+void FibonacciAB<T>(int nombre, T a, T b) where T : INumber<T>
 {
   for (; nombre-- > 0; a = b - a)
     Console.Write($"{b += a} ");
 }
 
-void Fibonacci(int nombre)
-    => FibonacciAB(nombre, 0, 1);
+void Fibonacci<T>(int nombre) where T : INumber<T>
+    => FibonacciAB(nombre, T.Zero, T.One);
 
-Fibonacci(10);
+Fibonacci<BigInteger>(1000);
 Console.WriteLine();
