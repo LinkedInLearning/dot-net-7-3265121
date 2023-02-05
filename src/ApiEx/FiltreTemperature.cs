@@ -1,0 +1,1 @@
+record FiltreTemperatures(int Min = -20, int Max = 55, int Nombre = 5);
