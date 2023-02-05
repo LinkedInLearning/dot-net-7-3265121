@@ -14,11 +14,12 @@
 
 <body>
     <div id="app">
-        <svg class="loading-progress">
-            <circle r="40%" cx="50%" cy="50%" />
-            <circle r="40%" cx="50%" cy="50%" />
-        </svg>
-        <div class="loading-progress-text"></div>
+        <div class="container position-absolute start-50 top-50 translate-middle">
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated progression" role="progressbar"
+                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
     </div>
 
     <div id="blazor-error-ui">
