@@ -6,22 +6,52 @@
     <ScrollView>
         <VerticalStackLayout
             Spacing="25"
-            Padding="30,0"
+            Padding="0,0"
             VerticalOptions="Center">
 
-            <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
-
+            <Map 
+                x:Name="carte"
+                HeightRequest="200" />
+            
             <Label
+                x:Name="lblTitre"
                 Text="Hello, World!"
                 SemanticProperties.HeadingLevel="Level1"
                 FontSize="32"
-                HorizontalOptions="Center" />
+                HorizontalOptions="Center" >
+                <FlyoutBase.ContextFlyout>
+                    <MenuFlyout>
+                        <MenuFlyoutItem Text="Défaut"
+                           Clicked="OnLabelClicked"
+                           CommandParameter="Black" />
+                        <MenuFlyoutSubItem Text="Clair">
+                            <MenuFlyoutItem Text="Bleu"
+                               Clicked="OnLabelClicked"
+                               CommandParameter="LightBlue" />
+                            <MenuFlyoutItem Text="Corail"
+                               Clicked="OnLabelClicked"
+                               CommandParameter="LightCoral" />
+                            <MenuFlyoutItem Text="Cyan"
+                               Clicked="OnLabelClicked"
+                               CommandParameter="LightCyan" />
+                        </MenuFlyoutSubItem>
+                        <MenuFlyoutSubItem Text="Sombre">
+                            <MenuFlyoutItem Text="Bleu"
+                               Clicked="OnLabelClicked"
+                               CommandParameter="DarkBlue" />
+                            <MenuFlyoutItem Text="Cyan"
+                               Clicked="OnLabelClicked"
+                               CommandParameter="DarkCyan" />
+                            <MenuFlyoutItem Text="Magenta"
+                               Clicked="OnLabelClicked"
+                               CommandParameter="DarkMagenta" />
+                        </MenuFlyoutSubItem>
+                    </MenuFlyout>
+                </FlyoutBase.ContextFlyout>
+            </Label>
 
             <Label
+                Padding="30,0"
                 Text="Welcome to .NET Multi-platform App UI"
                 SemanticProperties.HeadingLevel="Level2"
                 SemanticProperties.Description="Welcome to dot net Multi platform App U I"
