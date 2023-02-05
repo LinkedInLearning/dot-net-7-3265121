@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Flux.Models;
+using Microsoft.AspNetCore.RateLimiting;
 
 namespace Flux.Controllers;
 
@@ -18,6 +19,7 @@ public class HomeController : Controller
         return View();
     }
 
+    [DisableRateLimiting]
     public IActionResult Privacy()
     {
         return View();
