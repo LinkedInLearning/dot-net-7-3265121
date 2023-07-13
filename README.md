@@ -4,7 +4,7 @@ Ce dépôt concerne la formation LinkedIn Learning `Premiers pas avec .NET 7`. L
 
 Vous développez en C#, voici un aperçu des nouveautés apportées en .NET 7 et C# 11. Au travers d'exemples simples et concrets, nous explorerons les apports de cette nouvelle version en ASP.NET, Blazor, .NET MAUI, et bien d'autres.
 
-![3265121_fr_FR_TN](https://user-images.githubusercontent.com/1088939/216759046-46159328-3c7a-4af9-bd30-754766d97df3.jpg)
+![3265121_fr_FR_TN](https://media.licdn.com/dms/image/C4E0DAQESUx6gUhJ7xw/learning-public-crop_675_1200/0/1678086710215?e=2147483647&v=beta&t=tyB2BI-OlI4-FdmWjfChGJOdPCtaaiZ_bU83dAY4WM8)
 
 _Voir le fichier readme de la branche principale pour des informations et instructions actualisées._
 
